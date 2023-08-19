@@ -7,6 +7,7 @@
     "@mui/styled-engine-sc": "5.12.0",
     "@reduxjs/toolkit": "1.9.5",
     "axios": "1.4.0",
+    "jsdom": "^22.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-redux": "8.1.2",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.7.1",
     "@commitlint/config-conventional": "17.7.0",
+    "@testing-library/react": "^14.0.0",
     "@types/node": "20.5.1",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
@@ -36,7 +38,8 @@
     "lint-staged": "14.0.0",
     "prettier": "3.0.2",
     "typescript": "5.1.6",
-    "vite": "4.4.5"
+    "vite": "4.4.5",
+    "vitest": "^0.34.2"
   },
   "description": "The package where lives the restaurant yelp project.",
   "keywords": [
@@ -63,7 +66,8 @@
     "prepare": "husky install",
     "preview": "vite preview",
     "start:build": "tsc && vite build",
-    "start:dev": "vite"
+    "start:dev": "vite",
+    "test": "vitest"
   },
   "type": "module",
   "version": "0.0.0"
